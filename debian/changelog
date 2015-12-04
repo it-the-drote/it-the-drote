@@ -1,3 +1,9 @@
+apps-it-the-drote (0.1-2) unstable; urgency=medium
+
+  * fix installation paths
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 04 Dec 2015 18:11:24 +0200
+
 apps-it-the-drote (0.1-1) unstable; urgency=low
 
   * Initial release
