@@ -1,0 +1,26 @@
+extends main_layout
+block content
+	.row-fluid
+		.span4
+			.hero-unit
+				span.badge Metal
+				h1(align='center') #{metal}
+		.span4
+			.hero-unit
+				span.badge.badge-info Crystal
+				h1(align='center') #{crystal}
+		.span4
+			.hero-unit
+				span.badge.badge-success Deuterium
+				h1(align='center') #{deuterium}
+	
+	.row-fluid
+		.span6
+			.hero-unit
+				span.badge.badge-inverse Dark Matter
+				h1(align='center') #{darkmatter}
+		.span6
+			.hero-unit
+				span.badge.badge-warning Energy
+				h1(align='center') #{energy}
+	script(src='/javascripts/ogamereload.js')

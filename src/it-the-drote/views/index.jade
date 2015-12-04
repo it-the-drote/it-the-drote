@@ -1,0 +1,39 @@
+extends main_layout
+block content
+    ul.nav.nav-pills
+        li.active
+            a(href='#') Главная страница
+        li
+            a(href='/articles') Статьи и заметки(вместо блога)
+        li
+            a(href='/projects') Проекты
+        li
+            a(href='/dreams') Сновидения
+        li
+            a(href='/about') Обо мне
+        li
+            a(href='/cv') Резюме
+        li
+            a(href='/rss.xml') RSS
+    h1 Привет
+    p Здесь находится моё персональное пристанище в интернете. Сюда я пишу иногда 
+        a(href='/articles') статьи 
+        и описываю свои 
+        a(href='/dreams') сновидения.
+        Также здесь имеется 
+        a(href='/about') немного информации 
+        обо мне. Если желаете что-то прокомментировать или исправить, то Вам 
+        a(href='https://github.com/Like-all/markdown-articles') сюда.
+
+    .alert
+        .row
+            .span4
+                .alert.alert-info
+                    a(href='#{url}') Я слушаю: #{music}
+            .span4
+                .alert.alert-info
+                    <iframe width='200' height='302' src='http://iconosquare.com/widget.php?choice=myfeed&username=schmerzundtod&show_infos=false&linking=instagram&width=200&height=302&mode=grid&layout_x=1&layout_y=1&padding=0&photo_border=false&background=&text=000000&widget_border=false&radius=0&border-color=DDDDDD&user_id=276930028&time=1427127004413' allowTransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:200px; height:302px;'></iframe>
+            .span4
+                .alert.alert-info
+                    #duolingoBlock
+                    script(src="http://api.it-the-drote.tk/duolingo/LikeAll")
