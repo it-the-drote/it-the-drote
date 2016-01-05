@@ -7,12 +7,11 @@ html
         link(rel="yandex-tableau-widget" href="/javascripts/manifest.json")
         link(rel="icon", type="image/png", href="/images/favicon.png")
     body
-        .wrapper
-            .content
-                block content
-                script(src='/javascripts/jquery.js', async)
-                script(src='/javascripts/bootstrap3.min.js', async)
-            .footer
+        block content
+        script(src='/javascripts/jquery.js', async)
+        script(src='/javascripts/bootstrap3.min.js', async)
+        footer.footer
+            .container
                 .center-block
                     include metrika
                 .center-block
