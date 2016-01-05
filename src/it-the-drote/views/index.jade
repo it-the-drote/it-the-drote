@@ -32,7 +32,10 @@ block content
                     a(href='#{url}') Я слушаю: #{music}
             .span4
                 .alert.alert-info
-                    //<iframe width='200' height='302' src='http://iconosquare.com/widget.php?choice=myfeed&username=schmerzundtod&show_infos=false&linking=instagram&width=200&height=302&mode=grid&layout_x=1&layout_y=1&padding=0&photo_border=false&background=&text=000000&widget_border=false&radius=0&border-color=DDDDDD&user_id=276930028&time=1427127004413' allowTransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:200px; height:302px;'></iframe>
+                    #lastfmBlock
+                    script(src="http://api.dev.it-the-drote.tk/lastfm/nowplaying/like-all")
+            .span4
+                .alert.alert-info
                     #instagramBlock
                     script(src="http://api.dev.it-the-drote.tk/instagram/lastphoto/schmerzundtod")
             .span4
