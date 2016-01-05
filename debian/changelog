@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-7) unstable; urgency=medium
+
+  * Use solarized theme for bootstrap
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Wed, 06 Jan 2016 02:41:15 +0300
+
 apps-it-the-drote (0.3-6) unstable; urgency=medium
 
   * Text alignment
