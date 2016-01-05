@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-1) unstable; urgency=medium
+
+  * Migration to bootstrap v3.x
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Wed, 06 Jan 2016 01:36:15 +0300
+
 apps-it-the-drote (0.2-14) unstable; urgency=medium
 
   * An attempt to make footer
