@@ -1,3 +1,9 @@
+apps-it-the-drote (0.2-5) unstable; urgency=medium
+
+  * Load all scripts asynchronously
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Tue, 05 Jan 2016 18:19:25 +0300
+
 apps-it-the-drote (0.2-4) unstable; urgency=medium
 
   * Load scripts asynchronously
