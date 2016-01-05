@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-3) unstable; urgency=medium
+
+  * Tiny alert block
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Wed, 06 Jan 2016 01:52:22 +0300
+
 apps-it-the-drote (0.3-2) unstable; urgency=medium
 
   * Next attempt to make footer
