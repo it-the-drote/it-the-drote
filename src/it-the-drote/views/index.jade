@@ -15,27 +15,28 @@ block content
             a(href='/cv') Резюме
         li
             a(href='/rss.xml') RSS
-    h1 Привет
-    p Здесь находится моё персональное пристанище в интернете. Сюда я пишу иногда 
-        a(href='/articles') статьи 
-        и описываю свои 
-        a(href='/dreams') сновидения.
-        Также здесь имеется 
-        a(href='/about') немного информации 
-        обо мне. Если желаете что-то прокомментировать или исправить, то Вам 
-        a(href='https://github.com/Like-all/markdown-articles') сюда.
+    .span10.offset1
+        h1 Привет
+        p Здесь находится моё персональное пристанище в интернете. Сюда я пишу иногда 
+            a(href='/articles') статьи 
+            и описываю свои 
+            a(href='/dreams') сновидения.
+            Также здесь имеется 
+            a(href='/about') немного информации 
+            обо мне. Если желаете что-то прокомментировать или исправить, то Вам 
+            a(href='https://github.com/Like-all/markdown-articles') сюда.
 
-    .alert
-        .row
-            .span4
-                .alert.alert-info
-                    #lastfmBlock
-                    script(src="http://api.dev.it-the-drote.tk/lastfm/nowplaying/like-all", defer)
-            .span4
-                .alert.alert-info
-                    #instagramBlock
-                    script(src="http://api.dev.it-the-drote.tk/instagram/lastphoto/schmerzundtod", defer)
-            .span4
-                .alert.alert-info
-                    #duolingoBlock
-                    script(src="http://api.dev.it-the-drote.tk/duolingo/badges/LikeAll", defer)
+        .alert
+            .row
+                .span4
+                    .alert.alert-info
+                        #lastfmBlock
+                        script(src="http://api.dev.it-the-drote.tk/lastfm/nowplaying/like-all", defer)
+                .span4
+                    .alert.alert-info
+                        #instagramBlock
+                        script(src="http://api.dev.it-the-drote.tk/instagram/lastphoto/schmerzundtod", defer)
+                .span4
+                    .alert.alert-info
+                        #duolingoBlock
+                        script(src="http://api.dev.it-the-drote.tk/duolingo/badges/LikeAll", defer)
