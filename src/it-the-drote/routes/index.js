@@ -29,26 +29,7 @@ md.setOptions({
 
 exports.index = function(req, res){
 	var title = "In the middle of nowhere"
-	http.get('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=like-all&api_key=f4ba050b95c9cd5dad4f5187349fe89d&format=json&limit=1', function(apirespond){
-		apirespond.setEncoding('utf8');
-		apirespond.on('data', function(chunk){
-			trackinfo = trackinfo + chunk;
-		});
-		apirespond.on('end', function(){
-			var result = JSON.parse(trackinfo);
-			if (Object.prototype.toString.call(result.recenttracks.track) === '[object Array]')
-				var artist = result.recenttracks.track[0].artist['#text'],
-					song = result.recenttracks.track[0].name,
-					songurl = result.recenttracks.track[0].url;
-			else
-				var artist = result.recenttracks.track.artist['#text'],
-					song = result.recenttracks.track.name,
-					songurl = result.recenttracks.track.url;
-			//console.log(artist + ' ' + song + '\n' + result + '\n' + trackinfo);
-			res.render('index', { music: artist + ' - ' + song, url: songurl, caption: title });
-			trackinfo ='';
-		});
-	});
+	res.render('index', { caption: title });
 };
 
 exports.articles = function(req, res){
@@ -141,11 +122,3 @@ exports.cv = function(req, res){
 exports.donate = function(req, res){
 	res.render('donate');
 };
-
-exports.ogame = function(req, res){
-	fs.readFile('/tmp/ogame.json', function(err, data){
-		if(err) throw err;
-		gamedata = eval('(' + data + ')');
-	});
-	res.render('ogame', {metal: gamedata.metal, crystal: gamedata.crystal, deuterium: gamedata.deuterium, darkmatter: gamedata.darkmatter, energy: gamedata.energy});
-}

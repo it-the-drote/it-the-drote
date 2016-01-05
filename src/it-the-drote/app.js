@@ -37,7 +37,6 @@ app.get('/project/:id', routes.project);
 app.get('/about', routes.about);
 app.get('/donate', routes.donate);
 app.get('/cv', routes.cv);
-app.get('/ogame', routes.ogame)
 
 fs.writeFileSync('/tmp/it-the-drote.pid', process.pid);
 
