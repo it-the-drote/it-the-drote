@@ -7,23 +7,26 @@ html {
 }
 
 body {
-  padding: 10px;
   margin-bottom: 60px;
+}
+
+.container {
+  padding: 10px;
 }
 
 img {
   max-height: 300px;
 }
 
-#footer {
+.centered {
+  vertical-align: bottom;
+}
+
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
-}
-
-.centered {
-  vertical-align: bottom;
 }
