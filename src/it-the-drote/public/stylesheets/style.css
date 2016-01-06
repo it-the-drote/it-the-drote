@@ -16,6 +16,7 @@ body {
 
 img {
   max-height: 300px;
+  max-width: 100%;
 }
 
 .centered {
@@ -25,7 +26,9 @@ img {
 .footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
