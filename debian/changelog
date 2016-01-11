@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-13) unstable; urgency=medium
+
+  * Change footer offset
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 11 Jan 2016 16:21:50 +0300
+
 apps-it-the-drote (0.3-12) unstable; urgency=medium
 
   * Footer alignment
