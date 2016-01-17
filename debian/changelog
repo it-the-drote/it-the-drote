@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-14) unstable; urgency=medium
+
+  * New post-merge rss generator
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 17 Jan 2016 23:12:56 +0300
+
 apps-it-the-drote (0.3-13) unstable; urgency=medium
 
   * Change footer offset
