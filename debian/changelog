@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-17) unstable; urgency=medium
+
+  * Fix post-merge hook
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 18 Jan 2016 00:03:18 +0300
+
 apps-it-the-drote (0.3-16) unstable; urgency=medium
 
   * Symlink fix

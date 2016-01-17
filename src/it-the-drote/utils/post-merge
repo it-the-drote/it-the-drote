@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-files=`git log --name-status | grep -P 'A\t|M\t' | grep -v 'static/' | grep -v 'utils/' | head -n 20 | sed 's/\t/;/'`
+files=`git log --name-status $rev | grep -P 'A\t|M\t' | grep -v 'static/' | grep -v 'utils/' | head -n 20 | sed 's/\t/;/'`
 working_directory="/home/apps/it-the-drote/markdown-content/"
 rss_file="/home/apps/it-the-drote/rss.xml"
 
