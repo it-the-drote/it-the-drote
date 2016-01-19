@@ -118,6 +118,10 @@ exports.cv = function(req, res){
 	});
 };
 
+exports.ping = function(req, res){
+	res.send("OK");
+}
+
 
 exports.donate = function(req, res){
 	res.render('donate');
