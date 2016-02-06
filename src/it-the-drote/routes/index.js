@@ -37,7 +37,7 @@ md.setOptions({
 
 exports.index = function(req, res){
 	var title = "In the middle of nowhere"
-	res.render('index', { caption: title, host: hostname });
+	res.render('index', { caption: title, host: hostname, environment: env });
 };
 
 exports.articles = function(req, res){

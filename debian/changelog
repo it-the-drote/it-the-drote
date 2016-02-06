@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-32) unstable; urgency=medium
+
+  * Separate css themes for dev and production
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 07 Feb 2016 02:36:06 +0300
+
 apps-it-the-drote (0.3-31) unstable; urgency=medium
 
   * Generate hostnames
