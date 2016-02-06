@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-28) unstable; urgency=medium
+
+  * Trying to pass environment to jade template
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 07 Feb 2016 02:09:59 +0300
+
 apps-it-the-drote (0.3-27) unstable; urgency=medium
 
   * Use case block for rendering widgets

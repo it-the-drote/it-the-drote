@@ -31,7 +31,7 @@ block content
                 .col-md-3
                     .alert.alert-info
                         #lastfmBlock
-                        - var env = 'development'
+                        - var env = !{environment}
                         case env
                             when 'development'
                                 script(src="http://api.dev.it-the-drote.tk/lastfm/nowplaying/like-all", defer)

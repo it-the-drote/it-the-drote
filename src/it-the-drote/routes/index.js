@@ -5,13 +5,6 @@
 var fs = require('fs'), http = require('http'), md = require('marked'), gamedata = '', trackinfo = '';
 var env = require('/usr/lib/apps-environment/javascript/getenvironment.js').getEnv();
 var renderer = new md.Renderer();
-var hostname = '';
-
-if(env == 'development') {
-	hostname = 'dev.it-the-drote.tk';
-} else {
-	hostname = 'it-the-drote.tk';
-}
 
 renderer.heading = function (text, level) {
 	var escapedText = text.toLowerCase().replace(/[^\wА-яЁёЇїІіЄє]+/g, '-');
@@ -37,7 +30,7 @@ md.setOptions({
 
 exports.index = function(req, res){
 	var title = "In the middle of nowhere"
-	res.render('index', { caption: title });
+	res.render('index', { caption: title, environment: env });
 };
 
 exports.articles = function(req, res){
