@@ -46,7 +46,7 @@ exports.articles = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/articles.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('articles', { md:md, mdContent:data.toString(), caption: title });
+		res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
@@ -56,7 +56,7 @@ exports.dreams = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/dreams.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('dreams', { md:md, mdContent:data.toString(), caption: title });
+		res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
@@ -66,7 +66,7 @@ exports.projects = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/projects.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('projects', { md:md, mdContent:data.toString(), caption: title });
+		res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
@@ -78,7 +78,7 @@ exports.article = function(req, res){
 		else
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('articles', { md:md, mdContent:data.toString(), caption: title });
+			res.render('articles', { md:md, mdContent:data.toString(), caption: titlei, environment: env });
 	});
 };
 
@@ -90,7 +90,7 @@ exports.dream = function(req, res){
 		else
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('dreams', { md:md, mdContent:data.toString(), caption: title });
+			res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
@@ -102,7 +102,7 @@ exports.project = function(req, res){
 		else
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('projects', { md:md, mdContent:data.toString(), caption: title });
+			res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
@@ -112,7 +112,7 @@ exports.about = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/about.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('about', { md:md, mdContent:data.toString(), caption: title });
+		res.render('about', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
@@ -122,7 +122,7 @@ exports.cv = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/cv.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('cv', { md:md, mdContent:data.toString(), caption: title });
+		res.render('cv', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
