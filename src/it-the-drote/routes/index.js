@@ -78,7 +78,7 @@ exports.article = function(req, res){
 		else
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('articles', { md:md, mdContent:data.toString(), caption: titlei, environment: env });
+			res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env });
 	});
 };
 
