@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-27) unstable; urgency=medium
+
+  * Use case block for rendering widgets
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 07 Feb 2016 01:54:43 +0300
+
 apps-it-the-drote (0.3-26) unstable; urgency=medium
 
   * Fix node.js footer image path
