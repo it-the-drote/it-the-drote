@@ -1,3 +1,10 @@
+apps-it-the-drote (0.3-22) unstable; urgency=medium
+
+  * Use new layout everywhere
+  * Update marked and jade
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 07 Feb 2016 00:40:36 +0300
+
 apps-it-the-drote (0.3-21) unstable; urgency=medium
 
   * Try new layout
