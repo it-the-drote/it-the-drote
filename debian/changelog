@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-29) unstable; urgency=medium
+
+  * Blah
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 07 Feb 2016 02:17:21 +0300
+
 apps-it-the-drote (0.3-28) unstable; urgency=medium
 
   * Trying to pass environment to jade template
