@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-23) unstable; urgency=medium
+
+  * Fix doctype
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 07 Feb 2016 01:21:56 +0300
+
 apps-it-the-drote (0.3-22) unstable; urgency=medium
 
   * Use new layout everywhere
