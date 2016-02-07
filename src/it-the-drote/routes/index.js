@@ -13,6 +13,7 @@ if(env == 'development') {
 	hostname = 'it-the-drote.tk';
 }
 
+/*
 renderer.heading = function (text, level) {
 	var escapedText = text.toLowerCase().replace(/[^\wА-яЁёЇїІіЄє]+/g, '-');
 	return '<h' + level + '><a name="' +
@@ -22,6 +23,7 @@ renderer.heading = function (text, level) {
 				'"><span class="header-link"></span></a>' +
 				text + '</h' + level + '>';
 }
+*/
 
 md.setOptions({
 	renderer: renderer,
