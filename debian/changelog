@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-38) unstable; urgency=medium
+
+  * Implementing section sign
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sat, 13 Feb 2016 18:17:13 +0300
+
 apps-it-the-drote (0.3-37) unstable; urgency=medium
 
   * Enable anchors rendering

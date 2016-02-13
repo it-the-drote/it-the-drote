@@ -19,7 +19,7 @@ renderer.heading = function (text, level) {
 				escapedText +
 				'" class="anchor" href="#' +
 				escapedText +
-				'"><span class="header-link"></span></a>' +
+				'"><span class="header-link">§</span></a>' +
 				text + '</h' + level + '>';
 }
 
