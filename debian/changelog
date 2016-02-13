@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-39) unstable; urgency=medium
+
+  * Place section sign after heading
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sat, 13 Feb 2016 18:26:32 +0300
+
 apps-it-the-drote (0.3-38) unstable; urgency=medium
 
   * Implementing section sign

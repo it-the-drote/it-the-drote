@@ -15,12 +15,12 @@ if(env == 'development') {
 
 renderer.heading = function (text, level) {
 	var escapedText = text.toLowerCase().replace(/[^\wА-яЁёЇїІіЄє]+/g, '-');
-	return '<h' + level + '><a name="' +
+	return '<h' + level + '>' + text + ' <a name="' +
 				escapedText +
 				'" class="anchor" href="#' +
 				escapedText +
 				'"><span class="header-link">§</span></a>' +
-				text + '</h' + level + '>';
+				'</h' + level + '>';
 }
 
 md.setOptions({
