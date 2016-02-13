@@ -17,7 +17,7 @@ renderer.heading = function (text, level) {
 	var escapedText = text.toLowerCase().replace(/[^\wА-яЁёЇїІіЄє]+/g, '-');
 	return '<h' + level + '>' + text + ' <a name="' +
 				escapedText +
-				'" class="anchor" href="#' +
+				'" class="anchor section" href="#' +
 				escapedText +
 				'"><span class="header-link">§</span></a>' +
 				'</h' + level + '>';
