@@ -37,11 +37,11 @@ img {
     visibility: hidden;
 }
 
-h1:hover + a.section,
-h2:hover + a.section,
-h3:hover + a.section,
-h4:hover + a.section,
-h5:hover + a.section,
-h6:hover + a.section, {
+h1:hover .section,
+h2:hover .section,
+h3:hover .section,
+h4:hover .section,
+h5:hover .section,
+h6:hover .section {
     visibility: visible;
 }
