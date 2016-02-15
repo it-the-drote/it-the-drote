@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-43) unstable; urgency=medium
+
+  * Read title only if file exists
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 15 Feb 2016 16:32:29 +0300
+
 apps-it-the-drote (0.3-42) unstable; urgency=medium
 
   * Fix section sign visibility

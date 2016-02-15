@@ -71,11 +71,11 @@ exports.projects = function(req, res){
 };
 
 exports.article = function(req, res){
-	var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 	fs.readFile('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', function(err, data){
 		if(err)
 			res.render('404');
 		else
+			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
 			res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env });
@@ -83,11 +83,11 @@ exports.article = function(req, res){
 };
 
 exports.dream = function(req, res){
-	var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 	fs.readFile('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', function(err, data){
 		if(err)
 			res.render('404');
 		else
+			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
 			res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env });
@@ -95,11 +95,11 @@ exports.dream = function(req, res){
 };
 
 exports.project = function(req, res){
-	var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 	fs.readFile('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', function(err, data){
 		if(err)
 			res.render('404');
 		else
+			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
 			res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env });
