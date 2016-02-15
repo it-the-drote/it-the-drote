@@ -72,40 +72,43 @@ exports.projects = function(req, res){
 
 exports.article = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', function(err, data){
-		if(err)
+		if(err) {
 			res.status(404);
 			res.render('404');
-		else
+		} else {
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
 			res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		}
 	});
 };
 
 exports.dream = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', function(err, data){
-		if(err)
+		if(err) {
 			res.status(404);
 			res.render('404');
-		else
+		} else {
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
 			res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		}
 	});
 };
 
 exports.project = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', function(err, data){
-		if(err)
+		if(err) {
 			res.status(404);
 			res.render('404');
-		else
+		} else {
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
 			res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		}
 	});
 };
 
