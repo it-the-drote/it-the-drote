@@ -73,6 +73,7 @@ exports.projects = function(req, res){
 exports.article = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', function(err, data){
 		if(err)
+			res.status(404);
 			res.render('404');
 		else
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
@@ -85,6 +86,7 @@ exports.article = function(req, res){
 exports.dream = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', function(err, data){
 		if(err)
+			res.status(404);
 			res.render('404');
 		else
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
@@ -97,6 +99,7 @@ exports.dream = function(req, res){
 exports.project = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', function(err, data){
 		if(err)
+			res.status(404);
 			res.render('404');
 		else
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];

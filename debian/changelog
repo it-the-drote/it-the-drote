@@ -1,3 +1,9 @@
+apps-it-the-drote (0.3-44) unstable; urgency=medium
+
+  * Return proper status on 404 page
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 15 Feb 2016 16:45:43 +0300
+
 apps-it-the-drote (0.3-43) unstable; urgency=medium
 
   * Read title only if file exists
