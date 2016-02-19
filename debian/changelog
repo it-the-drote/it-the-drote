@@ -1,3 +1,9 @@
+apps-it-the-drote (0.4-8) unstable; urgency=medium
+
+  * Fix variable assignment
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 19 Feb 2016 15:09:19 +0300
+
 apps-it-the-drote (0.4-7) unstable; urgency=medium
 
   * Refactoring

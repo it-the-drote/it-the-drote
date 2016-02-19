@@ -123,7 +123,7 @@ exports.project = function(req, res){
 			res.status(404);
 			res.render('404', pageSettings);
 		} else {
-			var pageSettings.caption = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
+			pageSettings.caption = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			pageSettings.md = md;
 			pageSettings.mdContent = data.toString();
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md').mtime;
