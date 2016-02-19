@@ -4,7 +4,7 @@ DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/default.mk
 
 override_dh_auto_configure:
-	dpkg-parsechangelog -S Version >> src/it-the-drote/public/version
+	echo "{ \"version\": \"`dpkg-parsechangelog -S Version`\"}" > src/it-the-drote/public/version
 	dh_auto_configure
 
 %:
