@@ -4,7 +4,7 @@
  */
 var fs = require('fs'), http = require('http'), md = require('marked'), gamedata = '', trackinfo = '';
 var env = require('/usr/lib/apps-environment/javascript/getenvironment.js').getEnv();
-var pkgver = require('/opt/it-the-drote/public/version').version;
+var pkgver = require('/opt/it-the-drote/public/version.json').version;
 var renderer = new md.Renderer();
 var hostname = '';
 
