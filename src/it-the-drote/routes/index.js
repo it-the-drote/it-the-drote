@@ -35,39 +35,53 @@ md.setOptions({
 	smartypants: false
 });
 
+var pageSettings = {
+	caption: '',
+	md: undefined,
+	mdContent: undefined,
+	host: hostname,
+	environment: env,
+	version: pkgver
+}
 
 exports.index = function(req, res){
-	var title = "In the middle of nowhere"
-	res.render('index', { caption: title, host: hostname, environment: env, version: pkgver });
+	pageSettings.caption = "In the middle of nowhere"
+	res.render('index', pageSettings);
 };
 
 exports.articles = function(req, res){
-	var title = "Статьи и заметки(вместо блога)"
+	pageSettings.caption = "Статьи и заметки(вместо блога)"
 	fs.readFile('/home/apps/it-the-drote/markdown-content/static/articles.md', function(err, data){
 		if(err) throw err;
+		pageSettings.md = md;
+		pageSettings.mdContent = data.toString();
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/articles.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+		res.render('articles', pageSettings);
 	});
 };
 
 exports.dreams = function(req, res){
-	var title = "Сновидения"
+	pageSettings.caption = "Сновидения"
 	fs.readFile('/home/apps/it-the-drote/markdown-content/static/dreams.md', function(err, data){
 		if(err) throw err;
+		pageSettings.md = md;
+		pageSettings.mdContent = data.toString();
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/dreams.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+		res.render('dreams', pageSettings);
 	});
 };
 
 exports.projects = function(req, res){
-	var title = "Проекты"
+	pageSettings.caption = "Проекты"
 	fs.readFile('/home/apps/it-the-drote/markdown-content/static/projects.md', function(err, data){
 		if(err) throw err;
+		pageSettings.md = md;
+		pageSettings.mdContent = data.toString();
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/projects.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+		res.render('projects', pageSettings);
 	});
 };
 
@@ -75,12 +89,14 @@ exports.article = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', function(err, data){
 		if(err) {
 			res.status(404);
-			res.render('404', { environment: env, version: pkgver });
+			res.render('404', pageSettings);
 		} else {
-			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
+			pageSettings.caption = fs.readFileSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
+			pageSettings.md = md;
+			pageSettings.mdContent = data.toString();
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+			res.render('articles', pageSettings);
 		}
 	});
 };
@@ -89,12 +105,14 @@ exports.dream = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', function(err, data){
 		if(err) {
 			res.status(404);
-			res.render('404', { environment: env, version: pkgver });
+			res.render('404', pageSettings);
 		} else {
-			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
+			pageSettings.caption = fs.readFileSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
+			pageSettings.md = md;
+			pageSettings.mdContent = data.toString();
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+			res.render('dreams', pageSettings);
 		}
 	});
 };
@@ -103,33 +121,39 @@ exports.project = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', function(err, data){
 		if(err) {
 			res.status(404);
-			res.render('404', { environment: env, version: pkgver });
+			res.render('404', pageSettings);
 		} else {
-			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
+			var pageSettings.caption = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
+			pageSettings.md = md;
+			pageSettings.mdContent = data.toString();
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+			res.render('projects', pageSettings);
 		}
 	});
 };
 
 exports.about = function(req, res){
-	var title = "Обо мне"
+	pageSettings.caption = "Обо мне"
 	fs.readFile('/home/apps/it-the-drote/markdown-content/static/about.md', function(err, data){
 		if(err) throw err;
+		pageSettings.md = md;
+		pageSettings.mdContent = data.toString();
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/about.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('about', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+		res.render('about', pageSettings);
 	});
 };
 
 exports.cv = function(req, res){
-	var title = "Резюме"
+	pageSettings.caption = "Резюме"
 	fs.readFile('/home/apps/it-the-drote/markdown-content/static/cv.md', function(err, data){
 		if(err) throw err;
+		pageSettings.md = md;
+		pageSettings.mdContent = data.toString();
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/cv.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('cv', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
+		res.render('cv', pageSettings);
 	});
 };
 
