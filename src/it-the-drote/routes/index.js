@@ -4,6 +4,7 @@
  */
 var fs = require('fs'), http = require('http'), md = require('marked'), gamedata = '', trackinfo = '';
 var env = require('/usr/lib/apps-environment/javascript/getenvironment.js').getEnv();
+var pkgver = require('/opt/it-the-drote/public/version').version;
 var renderer = new md.Renderer();
 var hostname = '';
 
@@ -37,7 +38,7 @@ md.setOptions({
 
 exports.index = function(req, res){
 	var title = "In the middle of nowhere"
-	res.render('index', { caption: title, host: hostname, environment: env });
+	res.render('index', { caption: title, host: hostname, environment: env, version: pkgver });
 };
 
 exports.articles = function(req, res){
@@ -46,7 +47,7 @@ exports.articles = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/articles.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 	});
 };
 
@@ -56,7 +57,7 @@ exports.dreams = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/dreams.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 	});
 };
 
@@ -66,7 +67,7 @@ exports.projects = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/projects.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 	});
 };
 
@@ -74,12 +75,12 @@ exports.article = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', function(err, data){
 		if(err) {
 			res.status(404);
-			res.render('404', { environment: env });
+			res.render('404', { environment: env, version: pkgver });
 		} else {
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/articles/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env });
+			res.render('articles', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 		}
 	});
 };
@@ -88,12 +89,12 @@ exports.dream = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', function(err, data){
 		if(err) {
 			res.status(404);
-			res.render('404', { environment: env });
+			res.render('404', { environment: env, version: pkgver });
 		} else {
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/dreams/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env });
+			res.render('dreams', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 		}
 	});
 };
@@ -102,12 +103,12 @@ exports.project = function(req, res){
 	fs.readFile('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', function(err, data){
 		if(err) {
 			res.status(404);
-			res.render('404', { environment: env });
+			res.render('404', { environment: env, version: pkgver });
 		} else {
 			var title = fs.readFileSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md', { encoding: 'utf8' }).split('\n')[0];
 			moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/projects/' + req.params.id + '.md').mtime;
 			res.set('Last-Modified', moddate);
-			res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env });
+			res.render('projects', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 		}
 	});
 };
@@ -118,7 +119,7 @@ exports.about = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/about.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('about', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		res.render('about', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 	});
 };
 
@@ -128,7 +129,7 @@ exports.cv = function(req, res){
 		if(err) throw err;
 		moddate = fs.statSync('/home/apps/it-the-drote/markdown-content/static/cv.md').mtime;
 		res.set('Last-Modified', moddate);
-		res.render('cv', { md:md, mdContent:data.toString(), caption: title, environment: env });
+		res.render('cv', { md:md, mdContent:data.toString(), caption: title, environment: env, version: pkgver });
 	});
 };
 

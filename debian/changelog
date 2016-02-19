@@ -1,3 +1,9 @@
+apps-it-the-drote (0.4-5) unstable; urgency=medium
+
+  * Show site version in footer
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 19 Feb 2016 13:47:34 +0300
+
 apps-it-the-drote (0.4-4) unstable; urgency=medium
 
   * Align json to make it more pretty
