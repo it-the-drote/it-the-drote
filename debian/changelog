@@ -1,3 +1,9 @@
+apps-it-the-drote (0.4-4) unstable; urgency=medium
+
+  * Align json to make it more pretty
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 19 Feb 2016 13:29:17 +0300
+
 apps-it-the-drote (0.4-3) unstable; urgency=medium
 
   * Export version in json format
