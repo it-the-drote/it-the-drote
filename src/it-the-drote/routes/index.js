@@ -41,7 +41,8 @@ var pageSettings = {
 	mdContent: undefined,
 	host: hostname,
 	environment: env,
-	version: pkgver
+	version: pkgver,
+	currentyear: new Date().getFullYear()
 }
 
 exports.index = function(req, res){
