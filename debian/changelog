@@ -1,3 +1,9 @@
+apps-it-the-drote (0.4-14) unstable; urgency=medium
+
+  * Move 500-page under separated location
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 04 Mar 2016 16:34:33 +0300
+
 apps-it-the-drote (0.4-13) unstable; urgency=medium
 
   * Forgotten semicolon
