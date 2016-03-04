@@ -3,6 +3,8 @@ server {
   listen [::]:80;
   server_name dev.it-the-drote.tk;
 
+  root /opt/it-the-drote/public;
+
   access_log /var/log/nginx/it-the-drote-access.log;
   location / {
         proxy_pass  http://localhost:3000/;
@@ -56,4 +58,6 @@ server {
   location /warpzone/ {
         return 200;
   }
+
+  error_page 500 501 502 503 504 /500.html
 }
