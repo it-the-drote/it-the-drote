@@ -55,10 +55,14 @@ server {
         gzip_proxied    expired no-cache no-store private auth;
         gzip_types  text/css application/javascript;
   }
+  location /.well-known {
+        root /opt/it-the-drote/public;
+        autoindex on;
+        charset utf-8;
+  }
   location /warpzone/ {
         return 200;
   }
 
   error_page 500 501 502 503 504 /500.html;
 }
-

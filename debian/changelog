@@ -1,3 +1,9 @@
+apps-it-the-drote (0.4-16) unstable; urgency=medium
+
+  * Letsencrypt route location
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 28 Apr 2016 21:05:00 +0300
+
 apps-it-the-drote (0.4-15) unstable; urgency=medium
 
   * Useful links on 500-page
