@@ -1,8 +1,14 @@
-apps-it-the-drote (0.4-20) UNRELEASED; urgency=medium
+apps-it-the-drote (0.4-21) UNRELEASED; urgency=medium
+
+  * Align footer elements
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Wed, 19 Oct 2016 19:01:56 +0300
+
+apps-it-the-drote (0.4-20) unstable; urgency=medium
 
   * Shrink footer
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Wed, 19 Oct 2016 18:30:29 +0300
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Wed, 19 Oct 2016 19:01:50 +0300
 
 apps-it-the-drote (0.4-19) unstable; urgency=medium
 
