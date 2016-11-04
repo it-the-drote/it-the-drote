@@ -1,8 +1,14 @@
-apps-it-the-drote (0.4-21) UNRELEASED; urgency=medium
+apps-it-the-drote (0.4-22) UNRELEASED; urgency=medium
+
+  * Rename disclaimer link
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 04 Nov 2016 15:35:17 +0300
+
+apps-it-the-drote (0.4-21) unstable; urgency=medium
 
   * Align footer elements
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Wed, 19 Oct 2016 19:01:56 +0300
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 04 Nov 2016 15:35:05 +0300
 
 apps-it-the-drote (0.4-20) unstable; urgency=medium
 
