@@ -24,7 +24,9 @@ img {
 }
 
 .footer {
-  position: absolute;
+  display: table;
+  text-align: center;
+  position: relative;
   bottom: 0;
   margin-right: auto;
   margin-left: auto;

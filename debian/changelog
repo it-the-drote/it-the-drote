@@ -1,8 +1,14 @@
-apps-it-the-drote (0.4-23) UNRELEASED; urgency=medium
+apps-it-the-drote (0.4-24) UNRELEASED; urgency=medium
+
+  * Footer CSS alignment
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 13 Nov 2016 19:04:00 +0300
+
+apps-it-the-drote (0.4-23) unstable; urgency=medium
 
   * Bootstrap solarized light theme
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 04 Nov 2016 15:56:49 +0300
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 13 Nov 2016 19:03:53 +0300
 
 apps-it-the-drote (0.4-22) unstable; urgency=medium
 
