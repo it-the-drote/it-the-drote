@@ -46,12 +46,13 @@ var pageSettings = {
 }
 
 exports.index = function(req, res){
-	pageSettings.caption = "In the middle of nowhere"
-	res.render('index', pageSettings);
+    console.log(req.headers);
+    pageSettings.caption = "In the middle of nowhere";
+    res.render('index', pageSettings);
 };
 
 exports.articles = function(req, res){
-	pageSettings.caption = "Статьи и заметки(вместо блога)"
+	  pageSettings.caption = "Статьи и заметки(вместо блога)";
 	fs.readFile('/home/apps/it-the-drote/markdown-content/static/articles.md', function(err, data){
 		if(err) throw err;
 		pageSettings.md = md;

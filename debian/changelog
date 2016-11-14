@@ -1,8 +1,14 @@
-apps-it-the-drote (0.4-24) UNRELEASED; urgency=medium
+apps-it-the-drote (0.4-25) UNRELEASED; urgency=medium
+
+  * Log HTTP headers
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 14 Nov 2016 11:52:44 +0300
+
+apps-it-the-drote (0.4-24) unstable; urgency=medium
 
   * Footer CSS alignment
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Sun, 13 Nov 2016 19:04:00 +0300
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 14 Nov 2016 11:52:38 +0300
 
 apps-it-the-drote (0.4-23) unstable; urgency=medium
 
