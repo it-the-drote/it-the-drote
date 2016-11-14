@@ -1,8 +1,14 @@
-apps-it-the-drote (0.4-25) UNRELEASED; urgency=medium
+apps-it-the-drote (0.4-26) UNRELEASED; urgency=medium
+
+  * Align the code
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 14 Nov 2016 13:51:21 +0300
+
+apps-it-the-drote (0.4-25) unstable; urgency=medium
 
   * Log HTTP headers
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 14 Nov 2016 11:52:44 +0300
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 14 Nov 2016 13:51:17 +0300
 
 apps-it-the-drote (0.4-24) unstable; urgency=medium
 
