@@ -1,8 +1,14 @@
-apps-it-the-drote (0.4-26) UNRELEASED; urgency=medium
+apps-it-the-drote (0.5-1) UNRELEASED; urgency=medium
+
+  * First build for Stretch
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Tue, 05 Dec 2017 00:58:16 -0800
+
+apps-it-the-drote (0.4-26) unstable; urgency=medium
 
   * Align the code
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 14 Nov 2016 13:51:21 +0300
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Tue, 05 Dec 2017 00:58:12 -0800
 
 apps-it-the-drote (0.4-25) unstable; urgency=medium
 
