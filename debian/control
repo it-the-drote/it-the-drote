@@ -5,7 +5,6 @@ Maintainer: Azer Abdullaev (Like All) <like-all@yandex.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 Homepage: http://it-the-drote.tk
-
 X-Debrew-Production-Flavours: ["jessie"]
 X-Debrew-Production-Architectures: ["amd64"]
 X-Debrew-Testing-Flavours: ["stretch"]
