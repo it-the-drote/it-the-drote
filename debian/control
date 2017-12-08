@@ -13,5 +13,5 @@ X-Debrew-Maintainer-Login: like-all
 
 Package: apps-it-the-drote
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, apps-environment-development | apps-environment-production
 Description: IT The Drote website

@@ -1,8 +1,14 @@
-apps-it-the-drote (0.5-3) UNRELEASED; urgency=medium
+apps-it-the-drote (0.5-4) UNRELEASED; urgency=medium
+
+  * Updated dependencies
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Fri, 08 Dec 2017 07:11:00 -0800
+
+apps-it-the-drote (0.5-3) unstable; urgency=medium
 
   * Updated travis tokens
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 07 Dec 2017 00:32:45 -0800
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 07 Dec 2017 00:54:13 -0800
 
 apps-it-the-drote (0.5-2) unstable; urgency=medium
 
