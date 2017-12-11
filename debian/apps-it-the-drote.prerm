@@ -1,6 +1,6 @@
 #!/bin/sh
 
-deb-systemd-invoke disable /lib/systemd/system/it-the-drote.service
+deb-systemd-invoke disable it-the-drote.service
 rm /etc/nginx/sites-enabled/it-the-drote.nginx
 deb-systemd-invoke reload nginx.service
 deb-systemd-invoke stop it-the-drote.service
