@@ -1,9 +1,15 @@
-apps-it-the-drote (0.5-8) UNRELEASED; urgency=medium
+apps-it-the-drote (0.5-9) UNRELEASED; urgency=medium
+
+  * Version bump
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 11 Jan 2018 07:53:28 -0800
+
+apps-it-the-drote (0.5-8) unstable; urgency=medium
 
   * Introduced markdown_home variable
   * Added /pictures location
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 11 Jan 2018 07:31:17 -0800
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 11 Jan 2018 07:53:25 -0800
 
 apps-it-the-drote (0.5-7) unstable; urgency=medium
 
