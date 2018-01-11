@@ -1,6 +1,7 @@
 apps-it-the-drote (0.5-8) UNRELEASED; urgency=medium
 
   * Introduced markdown_home variable
+  * Added /pictures location
 
  -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 11 Jan 2018 07:31:17 -0800
 
