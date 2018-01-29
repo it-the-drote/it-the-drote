@@ -1,8 +1,14 @@
-apps-it-the-drote (0.5-9) UNRELEASED; urgency=medium
+apps-it-the-drote (0.5-10) UNRELEASED; urgency=medium
+
+  * Bumped a version
+
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 29 Jan 2018 08:37:31 -0800
+
+apps-it-the-drote (0.5-9) unstable; urgency=medium
 
   * Version bump
 
- -- Azer Abdullaev (Like All) <like-all@yandex.com>  Thu, 11 Jan 2018 07:53:28 -0800
+ -- Azer Abdullaev (Like All) <like-all@yandex.com>  Mon, 29 Jan 2018 08:37:24 -0800
 
 apps-it-the-drote (0.5-8) unstable; urgency=medium
 
