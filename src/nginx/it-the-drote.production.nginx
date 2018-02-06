@@ -67,8 +67,7 @@ server {
         gzip_types  text/css application/javascript;
   }
   location /.well-known {
-        root /opt/it-the-drote/public;
-        autoindex on;
+        root /var/www/acme;
         charset utf-8;
   }
   location /warpzone/ {

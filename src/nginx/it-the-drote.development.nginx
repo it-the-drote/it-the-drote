@@ -78,7 +78,7 @@ server {
         gzip_types  text/css application/javascript;
   }
   location /.well-known {
-        root /opt/it-the-drote/public;
+        root /var/www/acme;
         autoindex on;
         charset utf-8;
   }
